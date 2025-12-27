@@ -1,0 +1,1724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metas -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="keywords" content="Dental Care, Oral Health, Belleville Dental" />
+    <meta name="description" content="Belleville Dental - Your Partner in Oral Health" />
+    <meta name="author" content="" />
+
+    <!-- Title  -->
+    <title>Belleville Dental</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800" rel="stylesheet">
+
+    <!-- Plugins -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/icofont/1.0.1/css/icofont.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        /* PRODUCT RATING SYSTEM - FORCE VISIBILITY */
+        .product-rating {
+            display: flex !important;
+            gap: 5px;
+            margin: 15px 0;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .product-rating .star {
+            font-size: 24px !important;
+            color: #ddd !important;
+            cursor: pointer !important;
+            transition: all 0.2s ease !important;
+            display: inline-block !important;
+            position: relative !important;
+            z-index: 10 !important;
+            padding: 5px !important;
+        }
+
+        .product-rating .star:hover {
+            color: #ffc107 !important;
+            transform: scale(1.2) !important;
+        }
+
+        .product-rating .star.active {
+            color: #ffc107 !important;
+        }
+
+        /* Make sure stars are above other elements */
+        .product-body {
+            position: relative;
+        }
+
+        /* Rating System Styles */
+        .star {
+            cursor: pointer !important;
+            transition: color 0.2s ease;
+            font-size: 20px;
+            color: #ddd;
+        }
+
+        .star:hover {
+            color: #ffc107 !important;
+        }
+
+        .star.active {
+            color: #ffc107 !important;
+        }
+
+        /* Basic Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none !important;
+            list-style: none;
+        }
+
+        body {
+            color: #00000a;
+            line-height: 1.3;
+            font-weight: 400;
+            font-size: 14px;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden !important;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Raleway', sans-serif;
+        }
+
+        p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+            word-spacing: 1px;
+            margin: 0;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        span,
+        a,
+        a:hover {
+            display: inline-block;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .section-padding {
+            padding: 100px 0;
+        }
+
+        .bg-gray {
+            background: #f7f7f7;
+        }
+
+        .section-head {
+            margin-bottom: 80px;
+        }
+
+        .section-head h4 {
+            position: relative;
+            padding: 0 0 0 15px;
+            line-height: 1;
+            border-left: 1px solid #eee;
+            letter-spacing: 2px;
+            font-size: 38px;
+            font-weight: 700;
+        }
+
+        .section-head h4:before {
+            content: '';
+            width: 1px;
+            height: 35px;
+            background: #2142ad;
+            position: absolute;
+            left: -1px;
+            bottom: 0;
+        }
+
+        .section-head h4 span {
+            font-weight: 200;
+            padding-bottom: 5px;
+        }
+
+        /* Navbar */
+        .navbar {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            background: transparent;
+            z-index: 999;
+            min-height: 80px;
+            transition: all 0.3s;
+        }
+
+        .navbar .navbar-brand {
+            color: #fff !important;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar .nav-link {
+            font-size: 13px;
+            font-weight: 600;
+            color: #eee !important;
+            letter-spacing: .5px;
+            margin: 15px 5px;
+            transition: all .3s;
+            position: relative;
+        }
+
+        .navbar .nav-link:hover {
+            color: #21ada2 !important;
+        }
+
+        .navbar .nav-link.active {
+            color: #21ada2 !important;
+        }
+
+        .nav-scroll {
+            background: #fff;
+            border-bottom: 1px solid rgba(12, 12, 12, 0.04);
+            padding: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-scroll .navbar-brand {
+            color: #222 !important;
+        }
+
+        .nav-scroll .nav-link {
+            color: #222 !important;
+        }
+
+        .visitor-counter {
+            background: rgba(33, 173, 162, 0.2);
+            padding: 8px 15px;
+            border-radius: 20px;
+            color: #fff;
+            font-weight: 600;
+            font-size: 13px;
+        }
+
+        .nav-scroll .visitor-counter {
+            background: rgba(33, 173, 162, 0.1);
+            color: #21ada2;
+        }
+
+        .navbar-toggler {
+            border: 2px solid #fff;
+            padding: 5px 10px;
+        }
+
+        .nav-scroll .navbar-toggler {
+            border-color: #222;
+        }
+
+        .nav-scroll .navbar-toggler span {
+            color: #222 !important;
+        }
+
+        @media (max-width: 991px) {
+            .navbar {
+                background: #fff !important;
+            }
+
+            .navbar .navbar-brand {
+                color: #222 !important;
+            }
+
+            .navbar .nav-link {
+                color: #222 !important;
+            }
+
+            .navbar .visitor-counter {
+                background: rgba(33, 173, 162, 0.1);
+                color: #21ada2;
+            }
+
+            .navbar-toggler {
+                border-color: #222;
+            }
+
+            .navbar-toggler span {
+                color: #222 !important;
+            }
+        }
+
+        /* Header */
+        .header {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #52a9df 0%, #764ba2 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header .caption {
+            position: relative;
+            z-index: 2;
+            padding-top: 150px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .header .caption h3 {
+            font-weight: 200;
+            letter-spacing: 3px;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .header .caption h1 {
+            font-size: 60px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .header .caption p {
+            font-size: 18px;
+            color: #eee;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .header .butn {
+            padding: 12px 35px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin: 10px;
+            color: #fff;
+            transition: all 0.3s;
+        }
+
+        .header .butn:hover {
+            background: #fff;
+            color: #667eea;
+        }
+
+        .hero .item {
+            background: #fff;
+            text-align: center;
+            padding: 30px 20px;
+            box-shadow: 0px 5px 35px 0px rgba(148, 146, 245, 0.15);
+            border-radius: 5px;
+            margin-bottom: 30px;
+            transition: all 0.3s;
+        }
+
+        .hero .item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 15px 45px 0px rgba(148, 146, 245, 0.25);
+        }
+
+        .hero .item .icon {
+            font-size: 50px;
+            margin-bottom: 15px;
+            color: #21ada2;
+        }
+
+        .hero .item h6 {
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        /* Services with Tabs */
+        .education-tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .tab-btn {
+            padding: 10px 25px;
+            border: 2px solid #21ada2;
+            background: white;
+            color: #21ada2;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 600;
+            font-size: 13px;
+        }
+
+        .tab-btn:hover,
+        .tab-btn.active {
+            background: #21ada2;
+            color: white;
+        }
+
+        .product-card {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            transition: all 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-image {
+            height: 200px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+        }
+
+        .product-body {
+            padding: 20px;
+        }
+
+        .product-rating {
+            display: flex;
+            gap: 5px;
+            margin: 15px 0;
+        }
+
+        .star {
+            font-size: 20px;
+            color: #ddd;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .star:hover,
+        .star.active {
+            color: #ffc107;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* Ticker */
+        .ticker {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, #21ada2, #1c9c93);
+            color: white;
+            padding: 12px 0;
+            overflow: hidden;
+            z-index: 998;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .ticker-content {
+            display: flex;
+            animation: scroll 30s linear infinite;
+            white-space: nowrap;
+        }
+
+        .ticker-content span {
+            padding: 0 50px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* Footer */
+        footer {
+            background: #111;
+            padding: 60px 0 80px;
+            text-align: center;
+            color: #777;
+        }
+
+        footer .social a {
+            color: #777;
+            font-size: 20px;
+            margin: 0 10px;
+            transition: all 0.3s;
+        }
+
+        footer .social a:hover {
+            color: #21ada2;
+        }
+
+        /* Contact Form */
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background: #21ada2;
+            border: none;
+            color: white;
+            padding: 12px 40px;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .contact-form button:hover {
+            background: #1c9c93;
+        }
+
+        .contact-info {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .contact-info .icon {
+            font-size: 40px;
+            color: #21ada2;
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .header .caption h1 {
+                font-size: 40px;
+            }
+
+            .section-head h4 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<body>
+
+
+<!-- the rest of your existing HTML -->
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="#home">
+    <img src="img/products/logo.png" alt="" style="height:80px; width: 80px;">
+</a>
+
+
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span style="color: #fff;">☰</span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#professional">Professional Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#patient">Patient Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <div class="visitor-counter ms-3">
+                    👥 <span id="visitor-count">0</span> Visitors
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 caption">
+                    <h1>Welcome to Belleville Dental</h1>
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="./img/belleville.webp" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100"
+                                    src="./img/The-Role-of-a-Dentist-in-Maintaining-Your-Oral-Health.png"
+                                    alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="./img/products/Best-Dental-clinic-near-me.jpg"
+                                    alt="Third slide">
+                            </div>
+                        </div>
+                    </div>
+
+                    <h1>Your Partner in Oral Health</h1>
+                    <p>Maintaining oral health is essential for your overall wellbeing. We provide comprehensive dental
+                        education, research, and quality products to help prevent tooth decay, gum disease, and other
+                        oral health complications.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features -->
+    <section class="hero section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="section-head col-sm-12 text-center">
+                    <h4>
+                        <span>Why Choose</span><br>
+                        Belleville Dental
+                    </h4>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="item">
+                        <span class="icon"><i class="icofont-doctor-alt"></i></span>
+                        <h6>Professional Doctors</h6>
+                        <p>Experienced dental professionals committed to your care</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="item">
+                        <span class="icon"><i class="icofont-shield-alt"></i></span>
+                        <h6>Quality Guarantee</h6>
+                        <p>Assured quality in all our services and products</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="item">
+                        <span class="icon"><i class="icofont-dollar-true"></i></span>
+                        <h6>Affordable Care</h6>
+                        <p>Budget-friendly dental solutions for everyone</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="item">
+                        <span class="icon"><i class="icofont-support"></i></span>
+                        <h6>24/7 Support</h6>
+                        <p>Always here to answer your questions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Education -->
+    <section class="section-padding bg-gray" id="professional">
+        <div class="container">
+            <div class="row">
+                <div class="section-head col-sm-12">
+                    <h4>
+                        <span>Professional</span><br>
+                        Education
+                    </h4>
+                </div>
+
+                <div class="col-12">
+                    <div class="education-tabs">
+                        <button class="tab-btn active" data-tab="courses">Courses</button>
+                        <button class="tab-btn" data-tab="help">Help Documents</button>
+                        <button class="tab-btn" data-tab="faculty">Faculty Resources</button>
+                        <button class="tab-btn" data-tab="student">Student Resources</button>
+                        <button class="tab-btn" data-tab="cases">Case Studies</button>
+                    </div>
+                </div>
+
+                <div class="col-12 tab-content active" id="courses">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="item">
+                                <span class="icon"><i class="icofont-graduate-alt"></i></span>
+                                <h6>Advanced Dental Courses</h6>
+                                <p>Access comprehensive courses covering modern dental techniques, procedures, and best
+                                    practices for oral healthcare professionals</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="item">
+                                <span class="icon"><i class="icofont-presentation"></i></span>
+                                <h6>Continuing Education Programs</h6>
+                                <p>Stay updated with the latest advancements in dentistry through our accredited
+                                    continuing education courses</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="item">
+                                <span class="icon"><i class="icofont-certificate-alt-1"></i></span>
+                                <h6>Certification Programs</h6>
+                                <p>Professional certification courses in specialized areas of dental practice and oral
+                                    surgery</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="item">
+                                <span class="icon"><i class="icofont-video-cam"></i></span>
+                                <h6>Online Training Modules</h6>
+                                <p>Interactive video-based learning modules for flexible professional development</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 tab-content" id="help">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="item">
+                                <span class="icon"><i class="icofont-file-document"></i></span>
+                                <h6>Clinical Guidelines</h6>
+                                <p>Comprehensive clinical practice guidelines for various dental procedures and patient
+                                    care protocols</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="item">
+                                <span class="icon"><i class="icofont-ui-file"></i></span>
+                                <h6>Reference Manuals</h6>
+                                <p>Quick reference manuals for dental procedures, medications, and treatment protocols
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="item">
+                                <span class="icon"><i class="icofont-question-circle"></i></span>
+                                <h6>FAQ Resources</h6>
+                                <p>Frequently asked questions and answers on common dental procedures and patient
+                                    concerns</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="item">
+                                <span class="icon"><i class="icofont-tools-alt-2"></i></span>
+                                <h6>Troubleshooting Guides</h6>
+                                <p>Step-by-step troubleshooting documentation for equipment and procedural challenges
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 tab-content" id="faculty">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="item">
+                                <span class="icon"><i class="icofont-book-alt"></i></span>
+                                <h6>Teaching Materials</h6>
+                                <p>Comprehensive teaching materials including lecture slides, handouts, and visual aids
+                                    for dental education</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="item">
+                                <span class="icon"><i class="icofont-ui-copy"></i></span>
+                                <h6>Curriculum Guides</h6>
+                                <p>Structured curriculum guides aligned with accreditation standards and learning
+                                    objectives</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="item">
+                                <span class="icon"><i class="icofont-paper"></i></span>
+                                <h6>Assessment Tools</h6>
+                                <p>Examination templates, rubrics, and evaluation criteria for student assessment</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="item">
+                                <span class="icon"><i class="icofont-chart-histogram"></i></span>
+                                <h6>Performance Analytics</h6>
+                                <p>Tools and frameworks for tracking student progress and program outcomes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 tab-content" id="student">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="item">
+                                <span class="icon"><i class="icofont-read-book"></i></span>
+                                <h6>Study Guides</h6>
+                                <p>Comprehensive study guides covering all aspects of dental education and board
+                                    preparation</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="item">
+                                <span class="icon"><i class="icofont-test-tube-alt"></i></span>
+                                <h6>Practice Tests</h6>
+                                <p>Mock examinations and practice tests to prepare for licensing and certification exams
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="item">
+                                <span class="icon"><i class="icofont-video-alt"></i></span>
+                                <h6>Educational Videos</h6>
+                                <p>High-quality video demonstrations of dental procedures and techniques</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="item">
+                                <span class="icon"><i class="icofont-flash"></i></span>
+                                <h6>Interactive Flashcards</h6>
+                                <p>Digital flashcards for quick review of dental terminology, procedures, and concepts
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 tab-content" id="cases">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="item">
+                                <span class="icon"><i class="icofont-file-document"></i></span>
+                                <h6>Clinical Case Studies</h6>
+                                <p>Explore real-world case studies demonstrating treatment approaches for various dental
+                                    conditions</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="item">
+                                <span class="icon"><i class="icofont-ambulance-cross"></i></span>
+                                <h6>Complex Treatment Cases</h6>
+                                <p>Detailed documentation of complex cases involving multiple procedures and specialist
+                                    collaboration</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="item">
+                                <span class="icon"><i class="icofont-prescription"></i></span>
+                                <h6>Treatment Planning Examples</h6>
+                                <p>Comprehensive treatment planning cases from initial diagnosis to final outcome</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="item">
+                                <span class="icon"><i class="icofont-check-circled"></i></span>
+                                <h6>Success Stories</h6>
+                                <p>Before and after case presentations showcasing successful treatment outcomes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patient Education -->
+    <section class="section-padding" id="patient">
+        <div class="container">
+            <div class="row">
+                <div class="section-head col-sm-12">
+                    <h4>
+                        <span>Patient</span><br>
+                        Education
+                    </h4>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="item">
+                        <span class="icon"><i class="icofont-tooth"></i></span>
+                        <h6>Oral Health Basics</h6>
+                        <p>Learn fundamental practices for maintaining healthy teeth and gums, including proper brushing
+                            and flossing techniques</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="item">
+                        <span class="icon"><i class="icofont-heartbeat"></i></span>
+                        <h6>Prevention Tips</h6>
+                        <p>Discover how to prevent tooth decay, gum disease, and other dental complications through
+                            regular care</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="item">
+                        <span class="icon"><i class="icofont-stethoscope-alt"></i></span>
+                        <h6>Common Conditions</h6>
+                        <p>Understand common dental issues like cavities and gingivitis, and their connection to overall
+                            health</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="item">
+                        <span class="icon"><i class="icofont-doctor"></i></span>
+                        <h6>Treatment Options</h6>
+                        <p>Explore various dental treatment procedures and what to expect during your visit to dental
+                            health professionals</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="item">
+                        <span class="icon"><i class="icofont-heart-alt"></i></span>
+                        <h6>Oral Health & Overall Health</h6>
+                        <p>Learn how dental problems can affect other parts of your body and why oral health is crucial
+                            for overall wellbeing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research -->
+    <section class="section-padding bg-gray" id="research">
+        <div class="container">
+            <div class="row">
+                <div class="section-head col-sm-12">
+                    <h4>
+                        <span>Latest</span><br>
+                        Research
+                    </h4>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="item">
+                        <span class="icon"><i class="icofont-laboratory"></i></span>
+                        <h6>Latest Studies</h6>
+                        <p>Access recent peer-reviewed research on dental health, disease prevention, and innovative
+                            treatment methods</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="item">
+                        <span class="icon"><i class="icofont-file-pdf"></i></span>
+                        <h6>Research Documents</h6>
+                        <p>Download comprehensive research papers, clinical trials, and scientific publications in
+                            dentistry</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="item">
+                        <span class="icon"><i class="icofont-video-alt"></i></span>
+                        <h6>Media Library</h6>
+                        <p>Watch educational videos, procedure demonstrations, and expert interviews on dental health
+                            topics</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+
+    <section class="section-padding" id="products">
+        <div class="container">
+            <div class="row">
+                <div class="section-head col-sm-12">
+                    <h4><span>Our</span><br>Products</h4>
+                </div>
+
+                <div class="col-12">
+                    <div class="education-tabs">
+                        <button class="tab-btn active" data-product-tab="all">All Products</button>
+                        <button class="tab-btn" data-product-tab="toothpaste">Toothpastes</button>
+                        <button class="tab-btn" data-product-tab="toothbrush">Toothbrushes</button>
+                        <button class="tab-btn" data-product-tab="kids">Kids Products</button>
+                        <button class="tab-btn" data-product-tab="electric">Electric Accessories</button>
+                        <button class="tab-btn" data-product-tab="floss">Dental Floss</button>
+                    </div>
+                </div>
+
+                <!-- TOOTHPASTE PRODUCTS -->
+                <div class="col-md-4 product-item" data-category="toothpaste">
+                    <div class="product-card">
+                        <div class="product-body">
+                            <img src="./img/products/whitening.jpg" alt="">
+                            <h5>Professional Whitening Toothpaste</h5>
+                            <p>Advanced formula for brighter, healthier teeth</p>
+                            <h4 style="color: #21ada2;">$12.99</h4>
+                            <div class="product-rating" data-product="1">
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                            </div>
+                            <button class="tab-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 product-item" data-category="toothpaste">
+                    <div class="product-card">
+                        <div class="product-body">
+                            <img src="./img/products/sensitivepaste.webp" alt="">
+                            <h5>Sensitive Teeth Toothpaste</h5>
+                            <p>Gentle care for sensitive teeth</p>
+                            <h4 style="color: #21ada2;">$13.99</h4>
+                            <div class="product-rating" data-product="1">
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                            </div>
+                            </img>
+                            <button class="tab-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 product-item" data-category="toothpaste">
+                    <div class="product-card">
+                        <img src="./img/products/mintpaste.png" alt="">
+                        <div class="product-body">
+                            <h5>Natural Mint Toothpaste</h5>
+                            <p>100% natural ingredients with fresh mint</p>
+                            <h4 style="color: #21ada2;">$11.99</h4>
+                            <div class="product-rating" data-product="1">
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                            </div>
+                            </img>
+                            <button class="tab-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TOOTHBRUSH PRODUCTS -->
+                <div class="col-md-4 product-item" data-category="toothbrush">
+                    <div class="product-card">
+                        <div class="product-body">
+                            <img src="./img/products/bamboopack.png" alt="">
+                            <h5>Bamboo Toothbrush Pack</h5>
+                            <p>Eco-friendly sustainable oral care</p>
+                            <h4 style="color: #21ada2;">$14.99</h4>
+                            <div class="product-rating" data-product="1">
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                            </div>
+                            </img>
+                            <button class="tab-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 product-item" data-category="toothbrush">
+                    <div class="product-card">
+                        <div class="product-body">
+                            <img src="./img/products/softbristles.jpg" alt="">
+                            <h5>Soft Bristle Toothbrush</h5>
+                            <p>Gentle cleaning for sensitive gums</p>
+                            <h4 style="color: #21ada2;">$6.99</h4>
+                            <div class="product-rating" data-product="1">
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                            </div>
+                            </img>
+                            <button class="tab-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KIDS PRODUCTS -->
+                <div class="col-md-4 product-item" data-category="kids">
+                    <div class="product-card">
+                        <div class="product-body">
+                            <img src="./img/products/kidsset.jpg" alt="">
+                            <h5>Kids Dental Care Set</h5>
+                            <p>Fun and effective oral care for children</p>
+                            <h4 style="color: #21ada2;">$24.99</h4>
+                            <div class="product-rating" data-product="1">
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                            </div>
+                            </img>
+                            <button class="tab-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 product-item" data-category="kids">
+                    <div class="product-card">
+                        <div class="product-body">
+                            <img src="./img/products/flavouredpaste.jpg" alt="">
+                            <h5>Kids Flavored Toothpaste</h5>
+                            <p>Fruity flavors kids love</p>
+                            <h4 style="color: #21ada2;">$9.99</h4>
+                            <div class="product-rating" data-product="1">
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                            </div>
+                            </img>
+                            <button class="tab-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 product-item" data-category="kids">
+                    <div class="product-card">
+                        <div class="product-body">
+                            <img src="./img/products/animal.webp" alt="">
+                            <h5>Animal Character Toothbrush</h5>
+                            <p>Fun animal designs for happy brushing</p>
+                            <h4 style="color: #21ada2;">$7.99</h4>
+                            <div class="product-rating" data-product="1">
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                            </div>
+                            </img>
+                            <button class="tab-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ELECTRIC ACCESSORIES -->
+                <div class="col-md-4 product-item" data-category="electric">
+                    <div class="product-card">
+                        <div class="product-body">
+                            <img src="./img/products/pngwing.com (11).png" alt="">
+                            <h5>Electric Toothbrush Pro</h5>
+                            <p>Advanced cleaning with multiple modes</p>
+                            <h4 style="color: #21ada2;">$89.99</h4>
+                            <div class="product-rating" data-product="1">
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                            </div>
+                            </img>
+                            <button class="tab-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 product-item" data-category="electric">
+                    <div class="product-card">
+                        <div class="product-body">
+                            <img src="./img/products/headreplacemnt.webp" alt="">
+                            <h5>Replacement Brush Heads</h5>
+                            <p>Compatible with all electric models</p>
+                            <h4 style="color: #21ada2;">$19.99</h4>
+                            <div class="product-rating" data-product="1">
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                            </div>
+                            </img>
+                            <button class="tab-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 product-item" data-category="electric">
+                    <div class="product-card">
+                        <div class="product-body">
+                            <img src="./img/products/brushcharger.jpg" alt="">
+                            <h5>USB Charging Station</h5>
+                            <p>Fast charging for electric toothbrushes</p>
+                            <h4 style="color: #21ada2;">$29.99</h4>
+                            <div class="product-rating" data-product="1">
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                            </div>
+                            </img>
+                            <button class="tab-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DENTAL FLOSS PRODUCTS -->
+                <div class="col-md-4 product-item" data-category="floss">
+                    <div class="product-card">
+                        <div class="product-body">
+                            <img src="./img/products/  floss.jpg" alt="">
+                            <h5>Premium Dental Floss</h5>
+                            <p>Gentle yet effective plaque removal</p>
+                            <h4 style="color: #21ada2;">$8.99</h4>
+                            <div class="product-rating" data-product="1">
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                            </div>
+                            </img>
+                            <button class="tab-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 product-item" data-category="floss">
+                    <div class="product-card">
+                        <div class="product-body">
+                            <img src="./img/products/mintfloss.jpg" alt="">
+                            <h5>Mint Waxed Dental Floss</h5>
+                            <p>Fresh breath with every use</p>
+                            <h4 style="color: #21ada2;">$7.99</h4>
+                            <div class="product-rating" data-product="1">
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                            </div>
+                            </img>
+                            <button class="tab-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 product-item" data-category="floss">
+                    <div class="product-card">
+                        <div class="product-body">
+                            <img src="./img/products/waterfloss.jpg" alt="">
+                            <h5>Water Flosser Portable</h5>
+                            <p>Cordless water flossing on the go</p>
+                            <h4 style="color: #21ada2;">$49.99</h4>
+                            <div class="product-rating" data-product="1">
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                            </div>
+                            </img>
+                            <button class="tab-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="section-padding bg-gray" id="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="section-head col-sm-12">
+                    <h4><span>Our</span><br>Gallery</h4>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-image" style="height: 250px; border-radius: 10px; margin-bottom: 20px;">
+                        <img src="./img/products/Best-Dental-Department.png"
+                            style="height: 250px; border-radius: 10px; margin-bottom: 20px;" alt="">
+                        </img>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-image" style="height: 250px; border-radius: 10px; margin-bottom: 20px;">
+                        <img src="./img/femaledentist.jpg"
+                            style="height: 250px; border-radius: 10px; margin-bottom: 20px;" alt="">
+                        </img>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-image" style="height: 250px; border-radius: 10px; margin-bottom: 20px;">
+                        <img src="./img/walkway.jpg"
+                            style="height: 250px; border-radius: 10px; margin-bottom: 20px;" alt="">
+                        </img>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-image" style="height: 250px; border-radius: 10px; margin-bottom: 20px;">
+                        <img src="./img/chairsetup.png"
+                            style="height: 250px; border-radius: 10px; margin-bottom: 20px;" alt="">
+                        </img>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-image" style="height: 250px; border-radius: 10px; margin-bottom: 20px;">
+                        <img src="./img/smileyman.webp"
+                            style="height: 250px; border-radius: 10px; margin-bottom: 20px;" alt="">
+                        </img>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-image" style="height: 250px; border-radius: 10px; margin-bottom: 20px;">
+                        <img src="./img/pinklip.webp"
+                            style="height: 250px; border-radius: 10px; margin-bottom: 20px;" alt="">
+                        </img>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="section-head col-sm-12">
+                    <h4><span>About</span><br>Belleville Dental</h4>
+                </div>
+                <div class="col-md-6">
+                    <img src="./img/National-Smile-Month-3.jpg" alt="">
+                </div>
+                <div class="col-md-6">
+                    <h3>Our Mission</h3>
+                    <p style="margin-bottom: 20px;">Belleville Dental is dedicated to increasing awareness about oral
+                        health and providing comprehensive information about dental care. We understand that dental
+                        health is an integral part of your overall wellbeing.</p>
+                    <p style="margin-bottom: 20px;">A healthy mouth, free of infections, injuries, and other problems
+                        with teeth and gums, is important in maintaining your overall health. Disease and other
+                        conditions can affect your dental health, and dental problems can affect other parts of your
+                        body.</p>
+                    <p style="margin-bottom: 20px;">We believe that failing to properly care for your oral health may
+                        lead to other health problems. That's why we provide resources to help you prevent or minimize
+                        many oral health problems through regular preventive steps and regular visits to dental health
+                        professionals.</p>
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <div class="contact-info"><span class="icon"><i class="icofont-phone"></i></span>
+                                <h6>Phone</h6>
+                                <p>+234 812 345 67</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="contact-info"><span class="icon"><i class="icofont-email"></i></span>
+                                <h6>Email</h6>
+                                <p>contact@bellevilledental.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-gray" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="section-head col-sm-12">
+                    <h4><span>Contact</span><br>Get In Touch</h4>
+                </div>
+                <div class="col-12 mb-5">
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5440.319954257302!2d6.673231797635587!3d6.22156329061086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1043f23eaf49df81%3A0x639332292a3bf72e!2sApTech!5e0!3m2!1sen!2sng!4v1766840218422!5m2!1sen!2sng"
+                        width="1200" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-info"><span class="icon"><i class="icofont-phone"></i></span>
+                        <h6>Phone</h6>
+                        <p>+234 812 345 67<br>+234 812 345 67</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-info"><span class="icon"><i class="icofont-email"></i></span>
+                        <h6>Email</h6>
+                        <p>contact@bellevilledental.com<br>support@bellevilledental.com</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-info"><span class="icon"><i class="icofont-location-pin"></i></span>
+                        <h6>Address</h6>
+                        <p>Core Area<br>Asaba Delta, Nigeria</p>
+                    </div>
+                </div>
+                <div class="col-md-8 mx-auto mt-5">
+                    <div class="contact-info" style="text-align: left;">
+                        <h4 style="margin-bottom: 20px;">Send Us a Message</h4>
+                        <form class="contact-form">
+                            <div class="row">
+                                <div class="col-md-6"><input type="text" placeholder="Your Name" required></div>
+                                <div class="col-md-6"><input type="email" placeholder="Your Email" required></div>
+                                <div class="col-12"><input type="text" placeholder="Subject"></div>
+                                <div class="col-12"><textarea rows="5" placeholder="Your Message" required></textarea>
+                                </div>
+                                <div class="col-12"><button type="submit">Send Message</button></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="social mb-3">
+                <a href="#"><i class="icofont-facebook"></i></a>
+                <a href="#"><i class="icofont-twitter"></i></a>
+                <a href="#"><i class="icofont-instagram"></i></a>
+                <a href="#"><i class="icofont-linkedin"></i></a>
+                <a href="#"><i class="icofont-youtube-play"></i></a>
+            </div>
+            <p>&copy; 2025 Belleville Dental. All Rights Reserved t.</p>
+            <p style="font-size: 12px; margin-top: 10px;">Developed by Joses Odubu</p>
+        </div>
+    </footer>
+
+    <div class="ticker">
+        <div class="ticker-content">
+            <span><i class="icofont-calendar"></i> <span id="current-date"></span></span>
+            <span><i class="icofont-clock-time"></i> <span id="current-time"></span></span>
+            <span><i class="icofont-location-pin"></i> <span id="location">Fetching location...</span></span>
+            <span>🦷 Welcome to Belleville Dental - Your Partner in Oral Health</span>
+            <span>✨ Preventing tooth decay and gum disease for healthier smiles</span>
+            <span>💙 Regular dental visits are essential for overall health</span>
+            <span><i class="icofont-calendar"></i> <span id="current-date-2"></span></span>
+            <span><i class="icofont-clock-time"></i> <span id="current-time-2"></span></span>
+            <span><i class="icofont-location-pin"></i> <span id="location-2">Fetching location...</span></span>
+            <span>🦷 Welcome to Belleville Dental - Your Partner in Oral Health</span>
+            <span>✨ Preventing tooth decay and gum disease for healthier smiles</span>
+            <span>💙 Regular dental visits are essential for overall health</span>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // VISITOR COUNTER - STARTS FROM 0
+        // VISITOR COUNTER - STARTS FROM 0
+        let visitorCount = parseInt(localStorage.getItem('visitorCount')) || 0;
+        const visitorElement = document.getElementById('visitor-count');
+
+        // Display current count
+        visitorElement.textContent = visitorCount.toLocaleString();
+
+        // Increment on page load
+        visitorCount++;
+        localStorage.setItem('visitorCount', visitorCount);
+        visitorElement.textContent = visitorCount.toLocaleString();
+
+        // Auto-increment every 5 seconds
+        // setInterval(() => {
+        //     visitorCount++;
+        //     localStorage.setItem('visitorCount', visitorCount);
+        //     visitorElement.textContent = visitorCount.toLocaleString();
+        // }, 5000);
+
+        function updateDateTime() {
+            const now = new Date();
+            const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            const dateString = now.toLocaleDateString('en-US', dateOptions);
+            const timeString = now.toLocaleTimeString('en-US');
+            document.getElementById('current-date').textContent = dateString;
+            document.getElementById('current-time').textContent = timeString;
+            document.getElementById('current-date-2').textContent = dateString;
+            document.getElementById('current-time-2').textContent = timeString;
+        }
+        updateDateTime();
+        setInterval(updateDateTime, 1000);
+
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(
+                (position) => {
+                    fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${position.coords.latitude}&longitude=${position.coords.longitude}&localityLanguage=en`)
+                        .then(res => res.json())
+                        .then(data => {
+                            const location = `${data.city}, ${data.countryName}`;
+                            document.getElementById('location').textContent = location;
+                            document.getElementById('location-2').textContent = location;
+                        })
+                        .catch(() => {
+                            document.getElementById('location').textContent = 'Location unavailable';
+                            document.getElementById('location-2').textContent = 'Location unavailable';
+                        });
+                },
+                () => {
+                    document.getElementById('location').textContent = 'Location unavailable';
+                    document.getElementById('location-2').textContent = 'Location unavailable';
+                }
+            );
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    document.querySelectorAll('.nav-link').forEach(link => { link.classList.remove('active'); });
+                    this.classList.add('active');
+                    const navbarCollapse = document.getElementById('navbarNav');
+                    if (navbarCollapse.classList.contains('show')) {
+                        navbarCollapse.classList.remove('show');
+                    }
+                }
+            });
+        });
+
+        document.addEventListener('click', function (e) {
+            const navbarCollapse = document.getElementById('navbarNav');
+            const navbarToggler = document.querySelector('.navbar-toggler');
+            if (navbarCollapse.classList.contains('show') && !navbarCollapse.contains(e.target) && !navbarToggler.contains(e.target)) {
+                navbarCollapse.classList.remove('show');
+            }
+        });
+
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('nav-scroll');
+            } else {
+                navbar.classList.remove('nav-scroll');
+            }
+            let current = '';
+            const sections = document.querySelectorAll('section[id]');
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        const productRatings = JSON.parse(localStorage.getItem('productRatings')) || {};
+        document.querySelectorAll('.product-rating').forEach(ratingDiv => {
+            const productId = ratingDiv.dataset.product;
+            if (productRatings[productId]) {
+                const stars = ratingDiv.querySelectorAll('.star');
+                stars.forEach((s, i) => {
+                    if (i < productRatings[productId]) {
+                        s.classList.add('active');
+                    }
+                });
+            }
+            const stars = ratingDiv.querySelectorAll('.star');
+            stars.forEach((star, index) => {
+                star.addEventListener('click', () => {
+                    productRatings[productId] = index + 1;
+                    localStorage.setItem('productRatings', JSON.stringify(productRatings));
+                    stars.forEach((s, i) => {
+                        if (i <= index) {
+                            s.classList.add('active');
+                        } else {
+                            s.classList.remove('active');
+                        }
+                    });
+                });
+                star.addEventListener('mouseenter', () => {
+                    stars.forEach((s, i) => {
+                        if (i <= index) {
+                            s.style.color = '#ffc107';
+                        }
+                    });
+                });
+                star.addEventListener('mouseleave', () => {
+                    stars.forEach((s, i) => {
+                        if (!s.classList.contains('active')) {
+                            s.style.color = '#ddd';
+                        }
+                    });
+                });
+            });
+        });
+
+        document.querySelectorAll('[data-tab]').forEach(btn => {
+            btn.addEventListener('click', function () {
+                const targetTab = this.dataset.tab;
+                const section = this.closest('section');
+                section.querySelectorAll('[data-tab]').forEach(b => { b.classList.remove('active'); });
+                this.classList.add('active');
+                section.querySelectorAll('.tab-content').forEach(content => { content.classList.remove('active'); });
+                section.querySelector(`#${targetTab}`).classList.add('active');
+            });
+        });
+
+        document.querySelectorAll('[data-product-tab]').forEach(btn => {
+            btn.addEventListener('click', function () {
+                const category = this.dataset.productTab;
+                document.querySelectorAll('[data-product-tab]').forEach(b => { b.classList.remove('active'); });
+                this.classList.add('active');
+                document.querySelectorAll('.product-item').forEach(item => {
+                    if (category === 'all' || item.dataset.category === category) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        document.querySelector('.contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+    </script>
+    <script>
+        // PRODUCT RATING SYSTEM - COMPLETE
+        (function () {
+            'use strict';
+
+            // Wait for page to fully load
+            window.addEventListener('load', function () {
+
+                // Get saved ratings from localStorage
+                var productRatings = {};
+                try {
+                    productRatings = JSON.parse(localStorage.getItem('productRatings')) || {};
+                } catch (e) {
+                    productRatings = {};
+                }
+
+                // Find all rating containers
+                var ratingContainers = document.querySelectorAll('.product-rating');
+
+                console.log('Found ' + ratingContainers.length + ' products to rate');
+
+                // Loop through each product
+                ratingContainers.forEach(function (ratingDiv) {
+
+                    var productId = ratingDiv.getAttribute('data-product');
+                    var stars = ratingDiv.querySelectorAll('.star');
+
+                    console.log('Setting up product ' + productId + ' with ' + stars.length + ' stars');
+
+                    // Load saved rating
+                    if (productRatings[productId]) {
+                        for (var i = 0; i < stars.length; i++) {
+                            if (i < productRatings[productId]) {
+                                stars[i].classList.add('active');
+                                stars[i].style.color = '#ffc107';
+                            }
+                        }
+                    }
+
+                    // Add events to each star
+                    stars.forEach(function (star, index) {
+
+                        // Make cursor pointer
+                        star.style.cursor = 'pointer';
+
+                        // Click event
+                        star.addEventListener('click', function (e) {
+                            e.preventDefault();
+                            e.stopPropagation();
+
+                            var rating = index + 1;
+                            productRatings[productId] = rating;
+
+                            // Save to localStorage
+                            localStorage.setItem('productRatings', JSON.stringify(productRatings));
+
+                            // Update stars
+                            for (var i = 0; i < stars.length; i++) {
+                                if (i <= index) {
+                                    stars[i].classList.add('active');
+                                    stars[i].style.color = '#ffc107';
+                                } else {
+                                    stars[i].classList.remove('active');
+                                    stars[i].style.color = '#ddd';
+                                }
+                            }
+
+                            alert('You rated this product ' + rating + ' stars!');
+                            console.log('Product ' + productId + ' rated ' + rating + ' stars');
+                        });
+
+                        // Hover effect
+                        star.addEventListener('mouseenter', function () {
+                            for (var i = 0; i < stars.length; i++) {
+                                if (i <= index) {
+                                    stars[i].style.color = '#ffc107';
+                                }
+                            }
+                        });
+
+                        // Mouse leave
+                        star.addEventListener('mouseleave', function () {
+                            for (var i = 0; i < stars.length; i++) {
+                                if (!stars[i].classList.contains('active')) {
+                                    stars[i].style.color = '#ddd';
+                                } else {
+                                    stars[i].style.color = '#ffc107';
+                                }
+                            }
+                        });
+                    });
+                });
+
+                console.log('Rating system initialized successfully!');
+            });
+        })();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+        <script>
+    // Change this path to your logo file
+    document.getElementById("site-logo").src = "images/logo.png";
+</script>
+
+</body>
